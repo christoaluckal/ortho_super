@@ -81,7 +81,7 @@ Remote Sensing\\
 \end{abstract}
 
 \begin{IEEEkeywords}
-component, formatting, style, styling, insert
+UAV, DEM
 \end{IEEEkeywords}
 
 \section{Introduction}
@@ -140,16 +140,16 @@ along with some external parameters in some cases
 \begin{figure}[htbp]
     \centering{\includegraphics[width=0.5\columnwidth]{Figures/FlightPath.png}}
     \caption{Flight Path for Data Acquisition}
-    \label{Flight Path for Data Acquisition}
+    \label{flightpath}
 \end{figure}
 
 
 \section{Methodology}
 
 \begin{figure}[htbp]
-    \centering{\includegraphics[width=0.8\columnwidth]{Figures/Methodology.png}}
-    \caption{Flight Path for Data Acquisition}
-    \label{fig1}
+    \centering{\includegraphics[width=0.8\columnwidth]{Figures/graph2.png}}
+    \caption{Change in GSD}
+    \label{gsd}
 \end{figure}
 
 
@@ -162,20 +162,20 @@ side overlap of 90\% and 70\% respectively. Traditionally
 such data is used to generate digital elevation models and
 orthomosaics. It is observed that the there exists a near
 exponential increase in the number of images as well as
-flight time (seen in fig d) with an increase in ground
+flight time as seen in Figure 2, with an increase in ground
 sampling distance or GSD (resolution) which can be
 expensive in terms of time and resources. In some cases,
 increasing GSD is not possible due to obstacles in flight
 path at low altitude. To overcome this limitation, this paper
 proposes adding a new step to the photogrammetry pipeline
-as seen in Figure 2 where we use popular multimedia super-
+as seen in Figure 3 where we use popular multimedia super-
 resolution implementations to upscale raw images before
 feeding them to the above-mentioned pipeline.
 
 \begin{figure}[htbp]
-    \centering{\includegraphics[width=\columnwidth]{Figures/graph2.png}}
-    \caption{Flight Path for Data Acquisition}
-    \label{fig3}
+    \centering{\includegraphics[width=\columnwidth]{Figures/Methodology.png}}
+    \caption{Pipeline}
+    \label{pipeline}
 \end{figure}
 
 
@@ -185,7 +185,7 @@ Images captured are pre-processed and up-scaled using two
 different multimedia super-resolution techniques based on
 generative networks, Image Super Resolution (ISR) \cite{cardinale2018isr} and
 Super-resolution Generative-Adversarial-network (SRGAN)
-\cite{fastsrgan}. As seen in Figure 2, we upscale raw images captured
+\cite{fastsrgan}. As seen in Figure 3, we upscale raw images captured
 by the UAV using ISR and SRGAN, the up-scaled images'
 metadata is modified to match that of the original image to
 maintain geo-location and camera orientation information
@@ -200,9 +200,9 @@ proposed technique.
 
 
 \begin{figure}[htbp]
-    \centering{\includegraphics[width=0.8\columnwidth]{Figures/compare.png}}
-    \caption{Flight Path for Data Acquisition}
-    \label{fig2}
+    \centering{\includegraphics[width=0.75\columnwidth]{Figures/compare.png}}
+    \caption{Super-Resolution Results}
+    \label{compare}
 \end{figure}
 
 % \begin{center}
@@ -238,7 +238,7 @@ proposed technique.
      RMSE & - & 0.010 & 0.002 & 0.002 \\ 
      PSNR & - & 39.594 & 52.189 & 51.215 \\
      SSIM & - & 0.926 & 0.993 & 0.991 \\
-     SIFT Density \\ (100 x 100 px) & - & 18.54 & 205.75 & 157.07 \\
+     SIFT Density \\ (100 x 100 px) & 173.34 & 18.54 & 205.75 & 157.07 \\
      \hline
      \end{tabular}
 \end{table}
@@ -249,6 +249,12 @@ image. Comparative metrics have also been shown in Table 1
 The next section focuses on the results and findings.
 
 \section{Results and Discussion}
+
+\begin{figure*}[htbp]
+    \centering{\includegraphics[width=\textwidth]{Figures/pixel.png}}
+    \caption{Pixelwise elevation difference when compared with the native DEM}
+    \label{span}
+\end{figure*}
 
 Digital Elevation Models (DEM) generated using each
 method are evaluated against the DEM generated using
@@ -261,24 +267,20 @@ to Noise Ratio (PSNR) and Structural Similarity Index
 DEM data structure whereas SSIM is calculated by
 converting the DEMs into grayscale images.
 
-% \begin{figure}[htbp]
-%     \centering{\includegraphics[width=\textwidth]{Figures/pixel.png}\vspace{2em}}
-%     \caption{Flight Path for Data Acquisition}
-%     \label{fig4}
-% \end{figure}
+
 
 \setlength{\tabcolsep}{10pt} % Default value: 6pt
 \renewcommand{\arraystretch}{1.5} % Default value: 1
 \begin{table}[h!]
-    \caption{Comparison Metrics}
+    \caption{Elevation Comparison Metrics}
     \centering
      \begin{tabular}{ c c c c c } 
      \hline
      Metric & SRGAN & ISR & AVG \\ [1ex] 
      \hline
-     ME & -0.266 & 0.210 & -0.024 \\ 
-     MAE & 0.390 & 0.312 & 0.199 \\ 
-     RMSE & 0.901 & 0.733 & 0.671 \\
+     ME (in m.) & -0.266 & 0.210 & -0.024 \\ 
+     MAE (in m.) & 0.390 & 0.312 & 0.199 \\ 
+     RMSE (in m.) & 0.901 & 0.733 & 0.671 \\
      PSNR & 29.95 & 31.74 & 32.51 \\
      SSIM & 0.969 & 0.977 & 0.978 \\
      \hline
@@ -310,6 +312,8 @@ B - baseline or the distance between two stereo images \\
 f - focal length of the camera \\
 p - parallax / distance of the same point in two stereo images \\
 
+
+
 To address this discrepancy, we take the DEMs generated
 by both methods and generate a DEM named AVG by
 shifting and averaging values from the former. It is observed
@@ -318,13 +322,8 @@ combining results from both methods is feasible and
 effective. The efficiency of this process is assessed below.
 
 
-\begin{figure}[htbp]
-    \centering{\includegraphics[width=0.8\columnwidth]{Figures/avg.png}}
-    \caption{Flight Path for Data Acquisition}
-    \label{fig4}
-\end{figure}
 
-The three DEMs image shown before represents the
+The three DEMs image shown in Figure 5 represents the
 differences between the DEMs generated using ISR and
 SRGAN upscaled images as well as the combined result
 AVG and the original DEM. Green pixels indicate an
@@ -335,8 +334,16 @@ compensates for the overshoots and undershoots. As is
 evident, the values from the SRGAN method show a
 negative bias while the values belonging to ISR show a
 positive bias. The combination of the two (Averaging)
-produces results that close to the original. Figure 5 is the
-absolute elevation difference between the averaged DEM
+produces results that close to the original. 
+
+\begin{figure}[htbp]
+    \centering{\includegraphics[width=0.8\columnwidth]{Figures/avg.png}}
+    \caption{Flight Path for Data Acquisition}
+    \label{fig4}
+\end{figure}
+
+
+Figure 6 is the absolute elevation difference between the averaged DEM
 compared to original. An overall increase in accuracy is
 observed with the large blue patches indicating small errors.
 

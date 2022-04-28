@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex template"] 1651156324 "template.aux" "template.bbl" "template" 1651156325
+["bibtex template"] 1651158949 "template.aux" "template.bbl" "template" 1651159706
   "/usr/share/texlive/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1440712899 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "References/Gen.bib" 1651156016 4333 1a5a0ef83ae0068d0cf43003b989fe61 ""
-  "template.aux" 1651156325 2623 c051013aad7695592bdb198e976589b1 "pdflatex"
+  "template.aux" 1651159706 2755 93637627494794722e58ca872b6dc4e4 "pdflatex"
   (generated)
-  "template.blg"
   "template.bbl"
-["pdflatex"] 1651156324 "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.tex" "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.pdf" "template" 1651156325
+  "template.blg"
+["pdflatex"] 1651159705 "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.tex" "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.pdf" "template" 1651159706
   "/etc/texmf/web2c/texmf.cnf" 1632986006 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.aux" 1651156325 2623 c051013aad7695592bdb198e976589b1 ""
-  "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.tex" 1651156322 24811 b7fc0b5512b755f7004d21d26f04f889 ""
+  "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.aux" 1651159706 2755 93637627494794722e58ca872b6dc4e4 ""
+  "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.tex" 1651159705 24777 d496440ad6d022880293b8e159e57ddf ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -88,13 +88,14 @@
   "Figures/avg.png" 1651130089 3799655 8f91b43a164424cc4ba2f9c97c7f56ca ""
   "Figures/compare.png" 1651130097 67513 9eb287d5b2b0a7dfbaf3f31ae6e6b7c0 ""
   "Figures/graph2.png" 1651130112 63106 b0c945a7176fb082c246f9ae3ce71842 ""
+  "Figures/pixel.png" 1651130130 502668 da9b7fc9653a82fcbf31c51dd3dca1c3 ""
   "IEEEtran.cls" 1651131757 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "template.aux" 1651156325 2623 c051013aad7695592bdb198e976589b1 "pdflatex"
-  "template.bbl" 1651156324 3633 a95a4ba2bcad917107e834683a5e05c1 "bibtex template"
-  "template.tex" 1651156322 24811 b7fc0b5512b755f7004d21d26f04f889 ""
+  "template.aux" 1651159706 2755 93637627494794722e58ca872b6dc4e4 "pdflatex"
+  "template.bbl" 1651158949 3633 a95a4ba2bcad917107e834683a5e05c1 "bibtex template"
+  "template.tex" 1651159705 24777 d496440ad6d022880293b8e159e57ddf ""
   (generated)
-  "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.pdf"
   "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.log"
-  "template.aux"
   "template.pdf"
+  "template.aux"
+  "/home/caluckal/Desktop/Github/ortho_super/Ortho/template.pdf"
   "template.log"

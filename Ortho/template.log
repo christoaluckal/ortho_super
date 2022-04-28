@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.30)  28 APR 2022 20:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.9.30)  28 APR 2022 20:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -271,45 +271,50 @@ File: Figures/FlightPath.png Graphic file (type png)
 <use Figures/FlightPath.png>
 Package pdftex.def Info: Figures/FlightPath.png  used on input line 141.
 (pdftex.def)             Requested size: 126.0pt x 136.22188pt.
-<Figures/Methodology.png, id=3, 449.68pt x 362.35374pt>
-File: Figures/Methodology.png Graphic file (type png)
-<use Figures/Methodology.png>
-Package pdftex.def Info: Figures/Methodology.png  used on input line 150.
-(pdftex.def)             Requested size: 201.60077pt x 162.44948pt.
+<Figures/graph2.png, id=3, 362.007pt x 217.467pt>
+File: Figures/graph2.png Graphic file (type png)
+<use Figures/graph2.png>
+Package pdftex.def Info: Figures/graph2.png  used on input line 150.
+(pdftex.def)             Requested size: 201.60077pt x 121.10706pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/FlightPath.png>]
-<Figures/graph2.png, id=15, 362.007pt x 217.467pt>
-File: Figures/graph2.png Graphic file (type png)
-<use Figures/graph2.png>
-Package pdftex.def Info: Figures/graph2.png  used on input line 176.
-(pdftex.def)             Requested size: 252.0pt x 151.383pt.
+<Figures/Methodology.png, id=15, 449.68pt x 362.35374pt>
+File: Figures/Methodology.png Graphic file (type png)
+<use Figures/Methodology.png>
+Package pdftex.def Info: Figures/Methodology.png  used on input line 176.
+(pdftex.def)             Requested size: 252.0pt x 203.06047pt.
 <Figures/compare.png, id=16, 62.1522pt x 67.9338pt>
 File: Figures/compare.png Graphic file (type png)
 <use Figures/compare.png>
 Package pdftex.def Info: Figures/compare.png  used on input line 203.
-(pdftex.def)             Requested size: 201.60077pt x 220.39452pt.
+(pdftex.def)             Requested size: 189.0pt x 206.6183pt.
+<Figures/pixel.png, id=17, 462.528pt x 159.2349pt>
+File: Figures/pixel.png Graphic file (type png)
+<use Figures/pixel.png>
+Package pdftex.def Info: Figures/pixel.png  used on input line 254.
+(pdftex.def)             Requested size: 516.0pt x 177.65181pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/Methodology.png> </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/graph2.png> </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/compare.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 300--303
+[2 </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/graph2.png> </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/Methodology.png> </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/compare.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 302--305
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--312
+Underfull \hbox (badness 10000) in paragraph at lines 308--314
 
  []
 
-<Figures/avg.png, id=23, 2006.49625pt x 1809.76125pt>
+<Figures/avg.png, id=24, 2006.49625pt x 1809.76125pt>
 File: Figures/avg.png Graphic file (type png)
 <use Figures/avg.png>
-Package pdftex.def Info: Figures/avg.png  used on input line 322.
+Package pdftex.def Info: Figures/avg.png  used on input line 340.
 (pdftex.def)             Requested size: 201.60077pt x 181.81517pt.
-(/home/caluckal/Desktop/Github/ortho_super/Ortho/template.bbl [3 </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/avg.png>])
+[3 </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/pixel.png> </home/caluckal/Desktop/Github/ortho_super/Ortho/Figures/avg.png>] (/home/caluckal/Desktop/Github/ortho_super/Ortho/template.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -325,18 +330,18 @@ Before submitting the final camera ready copy, remember to:
 
 ] (/home/caluckal/Desktop/Github/ortho_super/Ortho/template.aux) ) 
 Here is how much of TeX's memory you used:
- 3911 strings out of 481239
- 56551 string characters out of 5920377
- 304859 words of memory out of 5000000
- 19140 multiletter control sequences out of 15000+600000
+ 3918 strings out of 481239
+ 56654 string characters out of 5920377
+ 302867 words of memory out of 5000000
+ 19146 multiletter control sequences out of 15000+600000
  572199 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,10n,37p,614b,302s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/caluckal/Desktop/Github/ortho_super/Ortho/template.pdf (4 pages, 5931767 bytes).
+Output written on /home/caluckal/Desktop/Github/ortho_super/Ortho/template.pdf (4 pages, 6287880 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
+ 67 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
